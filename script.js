@@ -1,11 +1,11 @@
-// Skill bar animation
+// Skill bar 
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".skill-bar div").forEach(bar => {
     bar.style.width = bar.dataset.width;
   });
 });
 
-// Project modal
+// Project
 function openModal(id) {
   const title = document.getElementById("modalTitle");
   const text = document.getElementById("modalText");
@@ -36,7 +36,7 @@ function closeModal() {
   document.getElementById("modal").style.display = "none";
 }
 
-// Contact form handling
+// Contact
 const form = document.getElementById("contactForm");
 
 if (form) {
@@ -46,3 +46,4 @@ if (form) {
       "Message sent successfully!";
   });
 }
+
