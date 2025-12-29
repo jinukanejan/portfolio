@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jinuka Nejan | Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- VIDEO BACKGROUND -->
+<div class="video-bg">
+  <video autoplay muted loop playsinline>
+    <source src="videos/bg.mp4" type="video/mp4">
+  </video>
+</div>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-text">
+  <h1 class="hero-name">Mr. Jinuka Nejan</h1>
+  <h2 class="hero-role">Diploma Student | Web Developer</h2>
+  <p class="hero-desc">
+    Diploma student in Computer Science with Artificial Intelligence at NIBM.
+    Passionate about Web Development, AI Programming, and Cyber Security.
+  </p>
+</div>
+
+
+    <div class="hero-image">
+      <img src="images/profile.jpg" alt="Profile Image">
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section class="skills-section">
+    <h3 class="section-title">Skills</h3>
+
+    <div class="skills-card">
+
+      <div class="skill">
+        <div class="skill-label"><span>HTML</span><span>90%</span></div>
+        <div class="skill-bar"><div data-width="90%"></div></div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-label"><span>CSS</span><span>85%</span></div>
+        <div class="skill-bar"><div data-width="85%"></div></div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-label"><span>JavaScript</span><span>80%</span></div>
+        <div class="skill-bar"><div data-width="80%"></div></div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-label"><span>C++</span><span>75%</span></div>
+        <div class="skill-bar"><div data-width="75%"></div></div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-label"><span>Python</span><span>78%</span></div>
+        <div class="skill-bar"><div data-width="78%"></div></div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-label"><span>SQL</span><span>70%</span></div>
+        <div class="skill-bar"><div data-width="70%"></div></div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-label"><span>R</span><span>65%</span></div>
+        <div class="skill-bar"><div data-width="65%"></div></div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-label"><span>Git / GitHub</span><span>72%</span></div>
+        <div class="skill-bar"><div data-width="72%"></div></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section class="projects-section">
+    <h3 class="section-title">Projects</h3>
+
+    <div class="projects-grid">
+
+      <div class="project-box" onclick="openModal(1)">
+        <i class="fas fa-chart-line project-icon"></i>
+        <img src="images/project1.jpg" class="project-img" alt="Student Performance Analysis">
+        <h4>Student Performance Analysis</h4>
+        <p>Statistical analysis using RStudio, ANOVA, T-tests & Chi-square.</p>
+      </div>
+
+      <div class="project-box" onclick="openModal(2)">
+        <i class="fas fa-laptop-code project-icon"></i>
+        <img src="images/project2.jpg" class="project-img" alt="Portfolio Website">
+        <h4>Portfolio Website</h4>
+        <p>Modern responsive portfolio using HTML, CSS & JavaScript.</p>
+      </div>
+
+      <div class="project-box" onclick="openModal(3)">
+        <i class="fas fa-calculator project-icon"></i>
+        <img src="images/project3.jpg" class="project-img" alt="JavaScript Calculator">
+        <h4>JavaScript Calculator</h4>
+        <p>Web-based calculator implementing JavaScript logic.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MODAL -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h3 id="modalTitle"></h3>
+      <p id="modalText"></p>
+    </div>
+  </div>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section">
+    <h3 class="section-title">Contact</h3>
+
+    <div class="contact-card">
+
+      <div class="contact-info">
+        <p><i class="fas fa-phone"></i> 071 457 2831</p>
+        <p><i class="fas fa-envelope"></i> jinukanejan@gmail.com</p>
+      </div>
+
+      <form id="contactForm" class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+        <span id="formMessage"></span>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
