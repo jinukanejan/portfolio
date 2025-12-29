@@ -12,7 +12,7 @@
   object-fit: cover;
 }
 
-/* DARK OVERLAY (VERY IMPORTANT) */
+/*OVERLAY */
 .video-bg::after {
   content: "";
   position: absolute;
@@ -34,7 +34,7 @@ body {
 }
 
 
-/* HERO */
+/*Profile*/
 .hero {
   min-height: 100vh;
   display: flex;
@@ -83,7 +83,7 @@ body {
   animation: float 4s ease-in-out infinite;
 }
 
-/* GLASS EFFECT */
+/* Effect found from youtube*/
 .glass {
   margin: 50px auto;
   max-width: 900px;
@@ -93,7 +93,7 @@ body {
   border-radius: 20px;
 }
 
-/* SKILLS SECTION */
+/* SKILLS  */
 .skills-section {
   max-width: 900px;
   margin: 100px auto;
@@ -167,7 +167,7 @@ body {
   transition: transform 0.4s ease;
 }
 
-/* ANIMATED NEON BORDER */
+/* NEON Lights */
 .project-box::before {
   content: "";
   position: absolute;
@@ -281,7 +281,7 @@ body {
   font-family: 'Orbitron', sans-serif;
 }
 
-/* CONTACT INFO */
+/* CONTACT */
 .contact-info p {
   font-size: 1rem;
   margin-bottom: 20px;
@@ -357,4 +357,5 @@ body {
   position: relative;
   z-index: 1;
 }
+
 
